@@ -26,6 +26,8 @@ A. Open the Crpress--> ./node_modules/.bin/cypress Open
 Run test suite via terminal:
 A. For Run --> ./node_modules/.bin/cypress run. 
 
+Test pass video: https://github.com/ramzyngr/rabbitFinance/blob/main/Screen%20Recording%202021-06-09%20at%206.21.04%20PM.mp4
+
 
 
 Task-3:
