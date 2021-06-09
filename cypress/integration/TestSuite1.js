@@ -3,9 +3,9 @@ describe('My First Test Suites',function()
 it ('My First Test case',function()
 {     
     cy.visit("https://1423:1423@staging-finance.rabbitinternet.com/en/product/health-insurance/questions")
-   
+    
     cy.get('#product_category > :nth-child(2) > .row > :nth-child(3) > .form-check > .form-check-label').click({force: true})
-   
+    
     cy.get('#product_accident_subcategory > :nth-child(2) > .row > :nth-child(1) > .form-check > .form-check-label').click({force: true})
     cy.get('#customer_phone > .form-group > .row > :nth-child(2) > .form-control').type('0929555842')
     cy.get('#customer_phone > :nth-child(2) > .col-12 > .btn').click()
@@ -24,7 +24,7 @@ it ('My First Test case',function()
     cy.waitUntil(() =>  cy.get(':nth-child(2) > .p-3 > .text-center > .SummaryCard_summary-card__block-buttons__2bIwm > :nth-child(2) > .btn:visible').click() )
     
     cy.wait(4000)
-   
+    
     cy.get('#customer_first_name > .row > :nth-child(2) > .form-control').should('have.value','Ram')   
     cy.get('#customer_last_name > .row > :nth-child(2) > .form-control').should('have.value','Nagar')      
     cy.get(':nth-child(3) > .col-12 > .btn').click()
@@ -45,7 +45,7 @@ it ('My First Test case',function()
     cy.get(':nth-child(6) > .col-12 > .btn').click()
     cy.get('#customer_billing_same > :nth-child(2) > .row > :nth-child(1) > .form-check > .form-check-label').click()
     cy.get('#customer_shipping_same > :nth-child(2) > .row > :nth-child(1) > .form-check > .form-check-label').click()
-  
+    
     cy.get('.col-lg-4 > .btn').click()
     cy.waitUntil(() => cy.get('.SummaryCard_summary-card__button__1Psp8 > .btn').click()  )
   //  cy.wait(3000)
@@ -53,7 +53,6 @@ it ('My First Test case',function()
     cy.get('#credit_card_holder_name').type('Ram Nagar')
     cy.get('#credit_card_expiry_month').select('11')
     cy.get('#credit_card_expiry_year').select('2025')
-   
     cy.get('#credit_card_issuing_bank_country').select('THAILAND')
     cy.get('#credit_card_issuing_bank_ddl').select('AEON')
     cy.get('#cardholder_email').should('have.value','rbl.nagar@gmail.com')
