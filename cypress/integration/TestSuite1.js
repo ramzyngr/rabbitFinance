@@ -20,7 +20,7 @@ it ('My First Test case',function()
     cy.get('.mx-auto > .row > :nth-child(1) > .form-check > .form-check-label').click()
     cy.waitUntil(() => cy.get('#btn-marketing-consent').click() )
     //cy.wait(4000)
-    
+    ///
     cy.waitUntil(() =>  cy.get(':nth-child(2) > .p-3 > .text-center > .SummaryCard_summary-card__block-buttons__2bIwm > :nth-child(2) > .btn:visible').click() )
     
     cy.wait(4000)
